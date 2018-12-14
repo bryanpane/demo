@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>巷弄大享客</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- #wrapper -->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top navbar-style" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nospace" href="index.html">
+                    <img src="../images/logo.png" alt="巷弄大享客">
+                </a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="usrnm">Bryan</span>&nbsp;&nbsp;
+                    <span class="usrnm">您好</span>&nbsp;&nbsp;
+                </li>               
+                <li>
+                    <a href="#">登出</a>
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+            <!-- sidebar 側邊欄 -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav nav-sidebar" id="side-menu">
+                        <li>
+                            <a href="index.html">帳號一覽</a>
+                        </li>
+                        <li>
+                            <a href="coupons.html">建立優惠券</a>
+                        </li>
+                        <li>
+                            <a href="multipush.html">使用多個帳號傳送訊息</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+        <!-- 享客最新資訊 -->
+            <!-- 標題 -->
+            <div class="row">
+                <div class="col-lg-10 col-xs-6">
+                    <h3 class="page-header">享客最新資訊</h3>
+                </div>
+                <div class="col-lg-2 col-xs-6 txt-r">
+                    <a class="page-header inline-b" href="news-add.html">＋新增</a>
+                    &nbsp;&nbsp;
+                    <a class="page-header inline-b" href="news-list.html">顯示更多</a>
+                </div>
+            </div>
+            <!-- 標題 end-->
+            <!-- 列表 -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="panel panel-default noborder">
+                        <div class="panel-body nospace">
+                            <div class="table-responsive">
+                                <table class="table table-sp">
+                                    <colgroup class="rwa"></colgroup>
+                                    <colgroup class="rwb"></colgroup>
+                                    <thead>
+                                        <tr class="tb-gray">
+                                            <th>標題</th>
+                                            <th>發佈日期</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="news-content.html">布萊恩飛翼鋼彈PG版1元/盒，最後5盒限時開搶</a>
+                                            </td>
+                                            <td>2018-12-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="news-content.html">布萊恩飛翼鋼彈PG版1元/盒，最後5盒限時開搶</a></td>
+                                            <td>2018-12-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="news-content.html">布萊恩飛翼鋼彈PG版1元/盒，最後5盒限時開搶</a></td>
+                                            <td>2018-12-15</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+            </div>
+            <!-- 列表 end-->
+            <!-- 享客最新資訊 end-->
+            <!-- 帳號一覽 -->
+            <div class="row">
+                <div class="col-lg-10 col-xs-6">
+                    <h3 class="page-header">帳號一覽</h3>
+                </div>
+                <div class="col-lg-2 col-xs-6 txt-r">
+                    <a class="page-header inline-b" href="member-list.html">顯示更多</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="well">
+                        <input type="text" class="form-control srchbar inline-b" placeholder="關鍵字">
+                        <input name="" id="" class="btn btn-default" type="button" value="搜尋">
+                        <span><a href="#">清除</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="panel panel-default noborder">
+                        <div class="panel-body nospace">
+                            <div class="table-responsive mbrlist">
+                                <table class="table table-sp table-hover dataTable no-footer dtr-inline">
+                                    <thead>
+                                        <tr class="tb-dark">
+                                            <th width="68%">標題</th>
+                                            <th width="10%">狀態</th>
+                                            <th width="10%">好友人數</th>
+                                            <th width="10%">管理</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../images/user_photo_s.png" alt="">
+                                                    <span>布萊恩</span>
+                                                </a>
+                                            </td>
+                                            <td>服務中</td>
+                                            <td>24</td>
+                                            <td>
+                                                <input name="" id="" class="btn btn-default" type="button" value="關閉">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../images/user_photo_s.png" alt="">
+                                                    <span>布萊M</span>
+                                                </a>
+                                            </td>
+                                            <td>關閉</td>
+                                            <td>1</td>
+                                            <td>
+                                                <input name="" id="" class="btn btn-default" type="button" value="開啟">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                                <a href="#">
+                                                    <img src="../images/user_photo_s2.png" alt="">
+                                                    <span>微微一笑很傾城</span>
+                                                </a>
+                                            </td>
+                                            <td>關閉</td>
+                                            <td>1</td>
+                                            <td>
+                                                <input name="" id="" class="btn btn-default" type="button" value="開啟">
+                                            </td>                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+            <!-- 帳號一覽 end-->
+        </div>
+        <footer class="LyFoot">
+            <p class="gray">© ialley.tw</p>
+        </footer>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

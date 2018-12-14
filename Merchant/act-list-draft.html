@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>訊息草稿-巷弄大享客</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- #wrapper -->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top navbar-style" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nospace" href="index.html">
+                    <img src="../images/logo.png" alt="巷弄大享客">
+                </a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="usrnm">Bryan</span>&nbsp;&nbsp;
+                    <span class="usrnm">您好</span>&nbsp;&nbsp;
+                </li>               
+                <li>
+                    <a href="#">登出</a>
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+            <!-- sidebar 側邊欄 -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav nav-sidebar" id="side-menu">
+                        <li>
+                            <div class="master">
+                                <div class="profiles">
+                                    <a href="index.html" class="active">
+                                        <img src="../images/profile.jpg" alt="profile image" width="55" height="55">
+                                    </a>
+                                </div>
+                                <h2 class="profile-name">
+                                    <a href="index.html" class="active">不然呢</a>
+                                </h2>
+                                <p class="profile-id">@xjj6000q</p>
+                                <p class="profile-id">
+                                    <a href="" class="active">
+                                        <i class="fa fa-user"></i> 24
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="new-act.html">新增</a>
+                        </li>
+                        <li>
+                            <a href="act-list.html">
+                                訊息內容一覽
+                            </a>
+                        </li>
+                        <li>
+                            <a href="act-welcome.html">
+                                加入好友歡迎訊息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="coupons.html">優惠券</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+        <!-- 使用多個帳號傳送訊息 -->
+            <!-- 標題 -->
+            <div class="row">
+                <div class="col-lg-8 col-md-12 ttlns">
+                    <h3 class="page-header">訊息</h3>
+                    <div>
+                        <p class="inline-b">可於此建立、編輯訊息，或傳送測試訊息。</p>
+                        <a class="fl-r" href="act-list.html">返回</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 標題 end-->
+            <!-- 訊息狀態 -->
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="btn-staff">
+                        <a class="btn btn-default" href="#">預覽</a>
+                        <a class="btn btn-default" href="#">傳送測試訊息</a>
+                        <a class="btn btn-default" href="#">刪除</a>
+                        <a class="btn btn-gray fl-r" href="#">編輯</a>
+                    </div>
+
+                    <div class="well">
+                        <div class="inline-b">
+                            <span class="stats label label-outline label-primary">草稿</span>
+                        </div>
+                        <ul class="inline-b stats-info">
+                            <li>
+                                <span>設定日期及時間：</span> 2018-12-14 10:00
+                            </li>
+                            <li>
+                                <span>儲存時間：</span> 2018-12-13 11:32
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 訊息狀態 end-->
+            <!-- 列表 -->
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="panel panel-default noborder">
+                        <div class="panel-body nospace">
+                            <div class="table-responsive">
+                                <table class="table table-sp table-bordered dtr-inline" id="dataTables-example">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">
+                                                <!-- 文字訊息-->
+                                                <div class="panel panel-default txtmsg">
+                                                    <div class="panel-heading">
+                                                        文字
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        20%巷弄返利金活動又來囉～這次沒跟到就要等明年囉～
+                                                    </div>
+                                                </div>
+                                                <!-- 文字訊息 end-->
+                                                <!-- 貼圖訊息 -->
+                                                <div class="panel panel-default txtmsg">
+                                                    <div class="panel-heading">
+                                                        貼圖
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <img src="../images/52002735.gif" alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- 貼圖訊息 end-->
+                                                <!-- 圖片訊息 -->
+                                                <div class="panel panel-default txtmsg">
+                                                    <div class="panel-heading">
+                                                        圖片
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <img src="../images/pm01.png" width="100" alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- 圖片訊息 end-->
+                                                <!-- 優惠券訊息 -->
+                                                <div class="panel panel-default txtmsg">
+                                                    <div class="panel-heading">
+                                                        優惠券
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div>
+                                                            <div class="inline-b">
+                                                                <img src="../images/act001.png" alt="">
+                                                            </div>
+                                                            <div class="inline-b">
+                                                                20%返利金會員獨享又來囉
+                                                            </div> 
+                                                        </div>
+                                                        <p class="gray small nospace mt10">有效期限: 2018-12-11 00:00 ~ 2018-12-11 23:30</p>
+                                                    </div>
+                                                </div>
+                                                <!-- 優惠券訊息 end-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 列表 end-->
+
+            <!-- 使用多個帳號傳送訊息 end-->
+        </div>
+        <footer class="LyFoot" role="contentinfo">
+            <div class="MdGFT02Link">
+            </div>
+            <p class="gray">© ialley.tw</p>
+        </footer>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- moment -->
+    <script src="../js/moment.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- datetimepicker JavaScript -->
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker6').datetimepicker();
+            $('#datetimepicker7').datetimepicker({
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#datetimepicker6").on("dp.change", function (e) {
+                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker7").on("dp.change", function (e) {
+                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
